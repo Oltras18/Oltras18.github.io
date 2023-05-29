@@ -1,0 +1,617 @@
+
+
+
+
+
+* {
+    
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+
+body {
+    background-color: #d1d1d1;
+    
+    margin: 0 auto;
+
+}
+
+/* tête de page */
+
+header.header   {
+    background-color:#FFFFFFDF;
+    border-radius: 50px;
+    opacity: 80%;
+    z-index: 2;
+    width: 96.5%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+   
+    display: flex;
+    width: 80px;
+    
+}
+
+section.top-page {
+    min-height: 100vh;
+    padding: 25px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("image/bmw_serie1.png");
+
+    background-size: cover;
+    background-position: 20%;
+    position: relative;
+    
+}
+
+/* page de bienvenue */
+
+.landing-page {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.landing-page h1 {
+    font-size: 62px;
+}
+
+
+
+
+.bouton1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor:  pointer;
+
+}
+.bouton1:hover {
+    border: 1px solid #5bacd5;
+    background: #5bacd5;
+    transition: 1s;
+
+}
+
+
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 30px;
+}
+
+nav.nav ul li a {
+    
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+nav.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+nav.nav ul li::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #348fbb;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav.nav ul li:hover::after {
+    width: 100%;  
+}
+
+
+
+
+
+/* services */
+
+.services  {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+   
+}
+.service-item  a {
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+        
+}
+
+.serice-details:hover {
+    color: #348fbb; 
+    font-weight: 600;   
+}
+
+
+
+/* Nos meilleures ventes */
+
+.section-tittle {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: 100;
+    position:relative;
+  
+}
+
+.section-tittle::before {
+    content: "";
+    position:absolute;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 50px;
+}
+.best-BMW {
+    background-color: #d1d1d1;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.BMW-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex:1;
+
+}
+
+.BMW1 {
+    background-image:url(image/bmw_serie1.png);
+
+}
+.best-BMW .BMW1:hover {
+    min-height: 600px;
+}
+
+.BMW2 {
+    background-image:url(image/BMW_X1.png);
+
+}
+.best-BMW .BMW2:hover {
+    min-height: 600px;
+}
+
+.BMW3 {
+    background-image:url(image/BMW_X3.png);
+
+}
+.best-BMW .BMW3:hover {
+    min-height: 600px;
+}
+
+.BMW4 {
+    background-image:url(image/BMW_serie3.png);
+
+}
+.best-BMW .BMW4:hover {
+    min-height: 600px;
+}
+
+.BMW-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    
+    
+}
+
+.BMW-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.BMW-prix {
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+/* Nos électriques */
+
+.BMW1-elec {
+    background-image:url(image/BMW_ix.png);
+
+}
+.best-BMW .BMW1-elec:hover {
+    min-height: 600px;
+}
+
+
+.BMW2-elec {
+    background-image:url(image/BMW_I7.png);
+
+}
+.best-BMW .BMW2-elec:hover {
+    min-height: 600px;
+}
+
+.BMW3-elec {
+    background-image:url(image/BMW_IX3.png);
+
+}
+.best-BMW .BMW3-elec:hover {
+    min-height: 600px;
+}
+
+.BMW4-elec {
+    background-image:url(image/BMW_I3s.png);
+    
+    
+
+}
+.best-BMW .BMW4-elec:hover {
+    min-height: 600px;
+}
+
+
+
+
+.position {
+    min-width: 350px;
+    height: 500px;
+    flex:1;
+
+}
+
+
+
+
+
+
+/* pied de page */
+footer {
+    display:flex;
+    margin: 20px 100px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE Catalogue */
+
+/* tête de page  */
+
+section.top-page-catalogue {
+    min-height: 40vh;
+    padding: 25px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("image/BMW_IX3.png");
+    background-size: cover;
+    background-position: 20%;
+    position: relative
+}
+
+#voitures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section_tittle_catalogue {
+    margin: 60px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: 100;
+    position:relative;
+}
+.section_tittle_catalogue::before{
+    content: "";
+    position:absolute;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+
+
+.images_voitures {
+    margin: 100px auto;
+    padding: 0 8%;
+
+}
+.images_voitures ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0%;
+}
+.images_voitures li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.6665%;
+    transition: 0.5s;
+    height: 300px;
+    width: 28%;
+}
+.images_voitures li div {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.images_voitures li div img {
+    height: 100%;
+    width: 100%;
+}
+.images_voitures li:hover {
+    transform: scale(1.1);
+    margin: 20px;
+}
+.images_voitures li span {
+    color: black;
+    font-size: 18px;
+
+}
+#voitures li span.prix {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+#voitures li a {
+    background-color: #348fbb;
+    color: white;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+
+/* Page contact */
+ section.top-page-informations {
+    min-height: 40vh;
+    padding: 25px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url("image/BMW_magasin.png");
+    background-size: cover;
+    background-position: 20%;
+    position: relative
+ }
+ #contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 12%;
+ }
+ .localisation_contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0;
+    height: 80VH;
+ }
+ .localisation {
+    width: 49%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+ }
+ .localisation iframe {
+    width: 100%;
+    border-radius: 6px;
+ }
+
+ .localisation_contact .contact_div {
+    width: 49%;
+    height: 93.05%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 6px;
+
+
+ }
+ .localisation_contact h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+ }
+
+ .localisation_contact .contact_div form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+ }
+ .contact_div form input , textarea {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+ }
+ .contact_div form input[type="submit"] {
+    margin-bottom: 0;
+    background-color: #348fbb;
+    color: #fff;
+    border: 0;
+
+ }
+
+
+/* Page informations */
+section.top-page-Maquettes {
+    min-height: 40vh;
+    padding: 25px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("image/arriere_plan_info.webp");
+    background-size: cover;
+    background-position: 20%;
+    position: relative
+}
+.Informations {
+    margin: 50px;
+}
+
+
+
+
+ /* Mobile */
+@media (max-width: 900px) {
+    header {
+        padding: 0 10px;
+    }
+    header.header   {
+        
+        width: 85%;
+        
+    }
+    header .nav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .landing-page {
+        margin-top: 30px;
+        width: 80%;
+    }
+    .landing-page h1 {
+        font-size: 38px;
+    }
+    .images_voitures li {
+        width: 100%;
+    }
+    
+    #contact {
+        height: auto;
+    }
+    .localisation_contact {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .localisation {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .localisation_contact .contact_div {
+        width: 100%;
+    }
+    .bests-items {
+        margin: 0%;
+        
+        
+    }
+    .best-BMW {
+        background-color: #d1d1d1;
+        min-height: 500px;
+        
+        display: flex;
+    
+        flex-wrap: wrap;
+    
+    }
+    .no-grid {
+        min-width: 300px;
+        
+    }
+    .services  {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+       
+    }
+    .section-tittle {
+        font-size: 40px;
+       
+      
+    }
+
+    .Maquette1 {
+        width: 100%;
+    }
+    .Informations {
+        margin: 0;
+    }
+    .Maquette2 {
+        width: 100%;
+    }
+    .Maquette3 {
+        width: 100%;
+    }
+    
+    
+   
+    
+    
+    
+
+     
+
+}
+    
+    
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+
